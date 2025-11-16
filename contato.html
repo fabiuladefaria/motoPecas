@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - Paramotos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="img/paramotos logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+ 
+  /* ===== SEÇÃO CONTATO ===== */
+  .contato-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: var(--text-color);
+  }
+
+  .contato-info, .mapa, .equipe {
+    flex: 1 1 400px;
+    background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+   
+  .contato-info h2, .equipe h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5px;
+  }
+
+  /* Card de cada pessoa */
+  .equipe p {
+    background-color: #f5f8ff;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    line-height: 1.5;
+  }
+
+
+
+  .equipe p strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+  }
+
+  /* Detalhes de contato */
+  .equipe p i {
+    margin-right: 8px;
+    color: var(--primary-color);
+  }
+
+  .equipe p a.whatsapp-btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    text-decoration: none;
+  }
+
+  .equipe p a.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  }
+
+  /* Contato da empresa */
+  .contato-info p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  }
+
+  @media(max-width: 768px) {
+    .contato-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .contato-info, .mapa, .equipe {
+      flex: 100%;
+    }
+  }
+</style>
+
+</style>
+  </head>
+
+ 
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="img/paramotosLogo.png" alt="Logo da Empresa">
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="representantes.html">Representantes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="contato-section">
+
+  <!-- Informações da empresa -->
+  <div class="contato-info">
+    <h2>Contato da Empresa</h2>
+    <p><strong>Endereço:</strong> Endereço: Av. Jovino Fernandes Salles, 677 - Res. Novo Horizonte</p>
+    <p><strong>Cidade/Estado:</strong> Alfenas/MG - CEP: 37133-690</p>
+    <p><strong>Telefone:</strong> (35) 3291-3355</p>
+    <p><strong>Email:</strong> paramotos@paramotos.com.br</p>
+  </div>
+
+
+     
+     
+
+
+  <!-- Google Maps -->
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.366959879539!2d-45.966813084866406!3d-21.424632585709058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b78bff8d261619%3A0x3c8b18637e0f1d96!2sAv.%20Jovino%20Fernandes%20de%20Sales%2C%20677%20-%20Residencial%20Novo%20Horizonte%2C%20Alfenas%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1699999999999"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Equipe de 5 pessoas com WhatsApp -->
+  <div class="equipe">
+    <h2>Equipe de Contato</h2>
+    
+    <p><strong>Lucas Silva</strong><br>
+      Email: lucas@pecasmoto.com<br>
+      Tel: (68) 99999-0000<br>
+      <a href="https://api.whatsapp.com/send?phone=5568999990000" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </p>
+
+    <p><strong>Mariana Costa</strong><br>
+      Email: mariana@pecasmoto.com<br>
+      Tel: (82) 88888-1111<br>
+      <a href="https://api.whatsapp.com/send?phone=558288881111" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </p>
+
+    <p><strong>Felipe Rocha</strong><br>
+      Email: felipe@pecasmoto.com<br>
+      Tel: (96) 77777-2222<br>
+      <a href="https://api.whatsapp.com/send?phone=559677777222" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </p>
+
+    <p><strong>Gabriela Lima</strong><br>
+      Email: gabriela@pecasmoto.com<br>
+      Tel: (92) 66666-3333<br>
+      <a href="https://api.whatsapp.com/send?phone=559266663333" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </p>
+
+    <p><strong>Ana Pereira</strong><br>
+      Email: ana@pecasmoto.com<br>
+      Tel: (71) 55555-4444<br>
+      <a href="https://api.whatsapp.com/send?phone=557155554444" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </p>
+  </div>
+
+</section>
+<footer>
+  <div class="container footer-content">
+    <div class="company-info">
+      <h3>Paramotos</h3>
+      <p>Endereço: Av. Jovino Fernandes Salles, 677 - Res. Novo Horizonte</p>
+      <p>Alfenas/MG - CEP: 37133-690</p>
+      <p>PABX: (35) 3291-3355</p>
+      <p>Email: paramotos@paramotos.com.br</p>
+    </div>
+    <div class="social-media">
+      <h3>Redes Sociais</h3>
+      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/paramotosindustria/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="developer">
+      <span>Desenvolvido por Fabiula de Faria</span>
+      <span class="dev-icons">
+        <a href="https://www.linkedin.com/in/fabiuladefaria/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/fabiuladefaria" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="fabiulafaria@gmail.com"><i class="fas fa-envelope"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
