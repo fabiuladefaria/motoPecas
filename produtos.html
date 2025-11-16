@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="img/paramotos logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <title>Produtos - Paramotos</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +15,12 @@
   <img class="modal-content" id="imgModalContent">
 </div>
 <body>
+
+  <!-- Modal de imagem -->
+<div id="imgModal" class="img-modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="imgModalContent">
+</div>
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="container">
@@ -309,34 +317,44 @@
   </section>
 
  <!-- ===== FOOTER ===== -->
- <footer>
-  <div class="container footer-content">
-    <div class="company-info">
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- COLUNA 1 - SOBRE -->
+    <div class="footer-col">
       <h3>Paramotos</h3>
-      <p>Endereço: Av. Jovino Fernandes Salles, 677 - Res. Novo Horizonte</p>
-      <p>Alfenas/MG - CEP: 37133-690</p>
-      <p>PABX: (35) 3291-3355</p>
-      <p>Email: paramotos@paramotos.com.br</p>
+      <p>
+        Injeção de plásticos para motocicletas desde 1986.  
+        Qualidade, tradição e compromisso com o mercado brasileiro.
+      </p>
     </div>
-    <div class="social-media">
-     <h3>Redes Sociais</h3>
-      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://www.instagram.com/paramotosindustria/"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+    <!-- COLUNA 2 - CONTATO -->
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Alfenas - MG</li>
+        <li><i class="fas fa-phone"></i> (11) 1234-5678</li>
+        <li><i class="fas fa-envelope"></i> atendimento@paramotos.com.br</li>
+      </ul>
     </div>
+
+    <!-- COLUNA 3 - REDES SOCIAIS -->
+    <div class="footer-col">
+      <h3>Redes Sociais</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/paramotosindustria/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
   </div>
+
   <div class="footer-bottom">
-    <div class="developer">
-      <span>Desenvolvido por Fabiula de Faria</span>
-      <span class="dev-icons">
-        <a href="https://www.linkedin.com/in/fabiuladefaria/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/fabiuladefaria" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="fabiulafaria@gmail.com"><i class="fas fa-envelope"></i></a>
-      </span>
-    </div>
+    © 2025 Paramotos — Todos os direitos reservados.
   </div>
 </footer>
-
 
 
  <!-- ===== SCRIPT ===== -->
