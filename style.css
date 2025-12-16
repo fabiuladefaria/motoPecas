@@ -36,7 +36,7 @@ h1, h2, h3 {
    NAVBAR
 ============================================================ */
 .navbar {
-  background-color: #b7cdf5;
+  background-color: #f7ecad;
   color: var(--nav-link-color);
   padding: 10px 0;
   position: sticky;
